@@ -5,11 +5,9 @@ from colorama import Fore
 from typing import List
 def main():
     print("Welcome to Wordle!")
-
     word_set = load_word_set("data/words_wordle_sorted.txt")
     secret = random.choice(list(word_set))
     wordle = Wordle(secret)
-
     while wordle.can_attempt:
         x = input("\n Type your guess: ")
         if len(x) != wordle.WORD_LENGTH:
@@ -18,10 +16,8 @@ def main():
         if not x in word_set:
             print(Fore.RED + f'Word not in dictionary' + Fore.RESET)
             continue
-
         wordle.attempt(x)
         display_results(wordle)
-
     if wordle.is_solved:
         print("You've solved the puzzle!")  
     else:
@@ -37,8 +33,7 @@ def display_results(wordle: Wordle):
         colored_result_str = convert_result_color(result)
         lines.append(colored_result_str)
     for _ in range(wordle.remaining_attempts):
-        lines.append(" ".join(["_"] * wordle.WORD_LENGTH))
-    
+        lines.append(" ".join(["_"] * wordle.WORD_LENGTH))   
     draw_border(lines)
 
 def load_word_set(path: str):
