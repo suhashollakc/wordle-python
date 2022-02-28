@@ -14,4 +14,5 @@ Wordle was considered the most viral game of 2022. I built the terminal version 
 ## Terminal Game Screenshots
 
 ![alt text](https://github.com/suhashollakc/wordle-python/blob/main/op-1.PNG?raw=true)
+
 ![alt text](https://github.com/suhashollakc/wordle-python/blob/main/op-2.PNG?raw=true)
