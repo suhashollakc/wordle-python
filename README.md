@@ -1,7 +1,7 @@
-## wordle-python
+# Wordle Python Terminal Game
 Wordle was considered the most viral game of 2022. I built the terminal version in Python of the Wordle. 
 
-# How it is played ?
+## How it is played ?
 
 1.You have to guess the Wordle in six goes or less
 
